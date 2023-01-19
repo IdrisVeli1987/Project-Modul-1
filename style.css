@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  width: 1440px;
+  height: 6575px;
+  background-color: #fff;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.main-header {
+  display: flex;
+  align-items: baseline;
+  width: 60%;
+  margin-right: 7%;
+}
+
+.info-text {
+  width: 130px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.info-img {
+  width: 52px;
+  margin: 27% 2% 0 15%;
+}
+
+.globus {
+  width: 22px;
+  height: 21px;
+}
+
+.oclock {
+  width: 22px;
+  height: 22px;
+}
+
+.calendar {
+  width: 20px;
+  height: 22px;
+}
+
+section {
+  position: absolute;
+  width: 628px;
+  height: 190px;
+  left: 122px;
+  top: 248px;
+}
+
+.title {
+  font-family: "Roboto Slab";
+  font-size: 80px;
+  width: 628px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  width: 414px;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 2%;
+  /* or 30px */
+}
+
+.quote {
+    display: block;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 483.63px;
+    left: 409.39px;
+    top: 400px;
+    background: #1E4681;
+    border-radius: 5px;
+}
+
+.production {
+
+width: 420px;
+height: 113px;
+left: 435.42px;
+top: 685.88px;
+color: #fff;
+font-family: 'Roboto Slab';
+font-weight: 400;
+font-size: 25px;
+line-height: 130%;
+/* or 32px */
+}
+
+.author {
+    color: #fff;
+}
+
+.about {
+    margin-top: 50%;
+}
