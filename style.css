@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@500&display=swap");
 
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   font-family: "Roboto";
@@ -8,7 +9,7 @@ body {
 
 .main {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
   box-sizing: border-box;
   width: 1440px;
   height: 6575px;
@@ -18,8 +19,8 @@ body {
 .main-header {
   display: flex;
   flex-direction: row;
-  width: 40%;
-  margin: -2% 5%;
+  width: 345px;
+  margin: -25px;
 }
 
 .main-logo {
@@ -78,56 +79,57 @@ body {
 
 .content-header {
   display: flex;
-  position: absolute;
-  left: 330px;
-  top: 175px;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  top: 180px;
+  margin-left: -70px;
 }
 
 .title {
   font-family: "Roboto Slab";
   font-size: 80px;
-  width: 628px;
+  width: 575px;
   margin: -22px 10px;
   left: 122px;
 }
 
 .subtitle {
-  position: absolute;
+  position: relative;
   width: 420px;
   font-size: 20px;
   top: 180px;
-  left: 15px;
+  left: -575px;
 }
 
 .img {
-  margin: -40px -130px;
+  flex-direction: row;
+  margin: -325px 630px;
 }
 
 .director {
-  position: absolute;
+  display: flex;
   width: 314px;
   height: 354px;
-  left: 720px;
+  margin: 100px 130px;
 }
 
 .shadow {
   position: relative;
   width: 274px;
   height: 41px;
-  left: 250px;
-  top: 330px;
+  left: 170px;
+  top: -125px;
   z-index: -2;
 }
 
 .quote {
-  display: block;
-  position: absolute;
+  display: inline-block;
   width: 483px;
   background: #1e4681;
   border-radius: 5px;
-  margin: 10%;
-  left: 200px;
-  top: 360px;
+  margin: 240px;
 }
 
 .production {
@@ -151,10 +153,9 @@ body {
 
 .main-content {
   display: flex;
-  position: absolute;
   width: 662px;
   height: 600px;
-  margin-top: 110%;
+  margin: 500px -950px;
 }
 
 .main-article {
@@ -162,16 +163,11 @@ body {
   height: 374px;
 }
 
-h1 {
-  font-size: 55px;
-  width: 110%;
-  bottom: 20px;
-}
-
 .main-text {
   font-size: 24px;
   margin-bottom: 8%;
   width: 662px;
+  margin: 20px;
 }
 
 .sub-title {
@@ -180,157 +176,113 @@ h1 {
   font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 55px;
+  margin: 20px;
+}
+
+.camera-img {
+  display: flex;
+  position: relative;
+  margin: -435px 655px;
 }
 
 .camera {
-  position: absolute;
   width: 314px;
   height: 315px;
-  left: 720px;
-  top: 270px;
+  margin: 100px 130px;
 }
 
 .camera-shadow {
-  position: absolute;
   width: 366px;
   height: 59px;
-  left: 695px;
-  top: 560px;
   z-index: -5;
+  margin: 385px -470px;
 }
 
-.course-time {
-  width: 50%;
+.content-body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 232px;
+  height: 203px;
+  margin: 1410px -2560px;
 }
 
 .about-time {
-  position: absolute;
-  width: 1200px;
-  height: 203px;
-  left: 121px;
-  top: 1619px;
+  width: 1000px;
+  height: 212px;
 }
 
 .light {
   width: 232px;
   height: 203px;
-  left: 121px;
-  top: 1619px;
 }
 
 .light-shadow {
-  position: absolute;
+  position: relative;
+  top: -25px;
+  left: 30px;
   width: 189px;
   height: 32px;
-  left: 35px;
-  top: 190px;
   z-index: -5;
 }
 
-.lessons-time {
-  position: absolute;
-  left: 550px;
-  top: 1670px;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 25px;
-  width: 150px;
-  height: 39px;
+.course-time,
+.hour,
+.duration {
+  display: block;
+  margin: -20px -10px;
 }
 
-.diving {
-  position: absolute;
-  width: 150px;
-  height: 39px;
-  left: 550px;
-  top: 1720px;
-  font-family: "Roboto";
-}
-
-.lesson-hour {
-  position: absolute;
-  left: 800px;
-  top: 1670px;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 25px;
-  width: 150px;
-  height: 39px;
-}
-
-.lesson-duration {
-  position: absolute;
-  width: 150px;
-  height: 39px;
-  left: 800px;
-  top: 1720px;
-  font-family: "Roboto";
-  width: 150px;
-  height: 39px;
-}
-
+.lessons-time,
+.lesson-hour,
 .weeks {
-  position: absolute;
-  width: 150px;
-  height: 39px;
-  left: 1065px;
-  top: 1670px;
+  display: flex;
+  flex-direction: row;
+  margin: 100px 80px;
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 25px;
-}
-
-.course-duration {
-  position: absolute;
+  font-size: 18px;
   width: 150px;
   height: 39px;
-  left: 1065px;
-  top: 1720px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+}
+
+.diving,
+.lesson-duration,
+.course-duration {
+  display: flex;
+  width: 150px;
   font-size: 18px;
-  line-height: 130%;
+  margin: -100px 80px;
 }
 
 .content-info {
   display: flex;
-  position: absolute;
+  flex-direction: row;
+  width: 667px;
+  height: 93px;
 }
 
 .vebinar-info {
-  position: absolute;
-  display: flex;
 }
 
 .info-header {
-  position: absolute;
   width: 667px;
   height: 93px;
-  left: 121px;
-  top: 2000px;
   font-family: "Roboto Slab";
   font-size: 55px;
 }
 
 .vebinar {
-  position: absolute;
   width: 223px;
-  left: 122px;
-  top: 2222px;
   font-family: "Roboto";
   font-style: normal;
   font-size: 18px;
 }
 
 .vebinar-lesson {
-  position: absolute;
   width: 223px;
-  left: 122px;
-  top: 2250px;
   font-family: "Roboto";
   font-size: 18px;
-  line-height: 130%;
 }
 
 .access {
