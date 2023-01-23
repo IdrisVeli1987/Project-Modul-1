@@ -9,6 +9,7 @@ body {
 .main {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
   width: 1440px;
   height: 6575px;
   font-weight: 400;
@@ -16,44 +17,58 @@ body {
 
 .main-header {
   display: flex;
-  position: absolute;
-  justify-content: flex-start;
+  flex-direction: row;
   width: 40%;
   margin: -2% 5%;
 }
 
 .main-logo {
-  position: absolute;
-  width: 112px;
+  width: 312px;
   height: 66px;
-  left: 121px;
-  top: 21px;
-  margin: 40px 130px;
+  margin: 40px 270px;
 }
 
 .main-info {
   display: flex;
-  position: absolute;
   flex-direction: row;
   font-size: 20px;
-  margin: 150px;
+  margin: 110px -545px;
   width: 600px;
-  left: 91px;
 }
 
-.info-img {
-  width: 52px;
-  margin: 3% 2%;
+.online {
+  display: flex;
+  width: 150px;
+  margin-top: 50px;
+}
+
+.info-text {
+  display: flex;
+  width: 130px;
+  margin: 0 4px;
 }
 
 .globus {
   width: 22px;
   height: 21px;
+  margin-left: -30px;
+}
+
+.time {
+  display: flex;
+  width: 130px;
+  margin-top: 50px;
 }
 
 .oclock {
   width: 22px;
   height: 22px;
+}
+
+.day {
+  display: flex;
+  width: 150px;
+  margin: 50px 30px;
 }
 
 .calendar {
@@ -69,6 +84,7 @@ body {
 }
 
 .title {
+  font-family: "Roboto Slab";
   font-size: 80px;
   width: 628px;
   margin: -22px 10px;
@@ -84,14 +100,14 @@ body {
 }
 
 .img {
-  margin-top: -40px;
+  margin: -40px -130px;
 }
 
 .director {
   position: absolute;
   width: 314px;
   height: 354px;
-  left: 870px;
+  left: 720px;
 }
 
 .shadow {
@@ -99,7 +115,7 @@ body {
   width: 274px;
   height: 41px;
   left: 250px;
-  top: 315px;
+  top: 330px;
   z-index: -2;
 }
 
@@ -111,7 +127,7 @@ body {
   border-radius: 5px;
   margin: 10%;
   left: 200px;
-  top: 215px;
+  top: 360px;
 }
 
 .production {
@@ -138,7 +154,7 @@ body {
   position: absolute;
   width: 662px;
   height: 600px;
-  margin-top: 70%;
+  margin-top: 110%;
 }
 
 .main-article {
@@ -153,43 +169,33 @@ h1 {
 }
 
 .main-text {
-  display: flex;
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 24px;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   width: 662px;
 }
-
-
 
 .sub-title {
   width: 365px;
   height: 93px;
   font-family: "Roboto Slab";
-  font-style: normal;
   font-weight: 700;
   font-size: 55px;
-}
-
-.camera-img {
-  margin-bottom: 50px;
 }
 
 .camera {
   position: absolute;
   width: 314px;
   height: 315px;
-  left: 973px;
-  top: 910px;
+  left: 720px;
+  top: 270px;
 }
 
 .camera-shadow {
   position: absolute;
   width: 366px;
   height: 59px;
-  left: 947px;
-  top: 1190px;
+  left: 695px;
+  top: 560px;
   z-index: -5;
 }
 
@@ -284,5 +290,53 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  line-height: 130%;
+}
+
+.content-info {
+  display: flex;
+  position: absolute;
+}
+
+.vebinar-info {
+  position: absolute;
+  display: flex;
+}
+
+.info-header {
+  position: absolute;
+  width: 667px;
+  height: 93px;
+  left: 121px;
+  top: 2000px;
+  font-family: "Roboto Slab";
+  font-size: 55px;
+}
+
+.vebinar {
+  position: absolute;
+  width: 223px;
+  left: 122px;
+  top: 2222px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 18px;
+}
+
+.vebinar-lesson {
+  position: absolute;
+  width: 223px;
+  left: 122px;
+  top: 2250px;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.access {
+  width: 214px;
+  height: 39px;
+  font-family: "Roboto";
+  font-size: 25px;
   line-height: 130%;
 }
