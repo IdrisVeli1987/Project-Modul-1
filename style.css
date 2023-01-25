@@ -16,6 +16,8 @@ body {
   font-weight: 400;
 }
 
+/* main-header */
+
 .main-header {
   display: flex;
   flex-direction: row;
@@ -44,7 +46,6 @@ body {
 }
 
 .info-text {
-  display: flex;
   width: 130px;
   margin: 0 4px;
 }
@@ -77,6 +78,8 @@ body {
   height: 22px;
 }
 
+/* content-header */
+
 .content-header {
   display: flex;
   position: relative;
@@ -92,7 +95,6 @@ body {
   font-size: 80px;
   width: 575px;
   margin: -22px 10px;
-  left: 122px;
 }
 
 .subtitle {
@@ -104,7 +106,6 @@ body {
 }
 
 .img {
-  flex-direction: row;
   margin: -325px 630px;
 }
 
@@ -138,8 +139,6 @@ body {
   line-height: 32px;
   height: 113px;
   margin: 7% 10%;
-  font-style: normal;
-  font-weight: 0;
 }
 
 .author {
@@ -198,12 +197,13 @@ body {
   margin: 385px -470px;
 }
 
+/* content-body */
+
 .content-body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   width: 232px;
-  height: 203px;
   margin: 1410px -2560px;
 }
 
@@ -255,40 +255,133 @@ body {
   margin: -100px 80px;
 }
 
+/* content-info */
+
 .content-info {
-  display: flex;
-  flex-direction: row;
+  position: absolute;
   width: 667px;
   height: 93px;
 }
 
 .vebinar-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 900px;
 }
 
 .info-header {
-  width: 667px;
-  height: 93px;
+  width: 480px;
   font-family: "Roboto Slab";
   font-size: 55px;
+  margin: 30em 5em;
+}
+
+a {
+  text-decoration: none;
+  color: #1e4681;
+  margin: -150px 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #1e4681;
+}
+
+a .vebinar {
+  float: left;
+  justify-content: flex-start;
 }
 
 .vebinar {
-  width: 223px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 18px;
+  display: flex;
+  width: 77px;
+  margin: 125% -72%;
+}
+
+.vebinar:hover {
+  text-decoration: underline;
+}
+
+.vebinar-link {
+  width: 150px;
+  height: 39px;
+  margin: -103em 5em;
 }
 
 .vebinar-lesson {
   width: 223px;
-  font-family: "Roboto";
   font-size: 18px;
+  margin: -203% 125%;
+}
+
+.access-link {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 245px;
+  height: 39px;
+  margin: 105em -5em;
 }
 
 .access {
-  width: 214px;
+  margin: 7em 20em;
+}
+
+.access:hover {
+  text-decoration: underline;
+}
+
+.link {
+  width: 130px;
+}
+
+.if {
+  margin: -14em 38em;
+  width: 235px;
+}
+
+.dialog {
+  width: 150px;
+  margin: -101em 35em;
+  align-items: center;
+}
+
+.talk {
+  width: 150px;
+  font-size: 18px;
+  margin: 20px -10px;
+}
+
+.question {
+  width: 245px;
   height: 39px;
-  font-family: "Roboto";
-  font-size: 25px;
-  line-height: 130%;
+  font-size: 18px;
+  margin: 155px 290px;
+}
+
+.talk:hover {
+  text-decoration: underline;
+}
+
+.left-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  float: left;
+  margin: 100em 15em;
+  font-family: "Roboto Slab";
+}
+
+.list-heading {
+  width: 335px;
+  font-size: 55px;
+}
+
+.about-cinema-list {
+  width: 662px;
+  font-size: 24px;
+  line-height: 150%;
 }
