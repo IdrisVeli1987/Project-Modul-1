@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@500&display=swap");
 
 body {
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
   font-family: "Roboto";
@@ -21,22 +20,23 @@ body {
 .main-header {
   display: flex;
   flex-direction: row;
-  width: 345px;
+  width: 180px;
   margin: -25px;
 }
 
 .main-logo {
-  width: 312px;
+  width: 120px;
   height: 66px;
-  margin: 40px 270px;
+  margin: 40px 115px;
 }
 
 .main-info {
   display: flex;
   flex-direction: row;
   font-size: 20px;
-  margin: 110px -545px;
-  width: 600px;
+  margin: 110px -215px;
+  width: 425px;
+  height: 85px;
 }
 
 .online {
@@ -84,8 +84,6 @@ body {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  flex-direction: row;
-  align-items: flex-start;
   top: 180px;
   margin-left: -70px;
 }
@@ -226,16 +224,12 @@ body {
   z-index: -5;
 }
 
-.course-time,
-.hour,
-.duration {
+.course-time, .hour, .duration {
   display: block;
   margin: -20px -10px;
 }
 
-.lessons-time,
-.lesson-hour,
-.weeks {
+.lessons-time, .lesson-hour, .weeks {
   display: flex;
   flex-direction: row;
   margin: 100px 80px;
@@ -246,9 +240,7 @@ body {
   height: 39px;
 }
 
-.diving,
-.lesson-duration,
-.course-duration {
+.diving, .lesson-duration, .course-duration {
   display: flex;
   width: 150px;
   font-size: 18px;
@@ -268,7 +260,8 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
-  width: 900px;
+  width: 1116px;
+  margin: 90px -160px;
 }
 
 .info-header {
@@ -345,21 +338,20 @@ a .vebinar {
 
 .dialog {
   width: 150px;
-  margin: -101em 35em;
-  align-items: center;
+  margin: -102em 35em;
 }
 
 .talk {
   width: 150px;
   font-size: 18px;
-  margin: 20px -10px;
+  margin: 28px -10px;
 }
 
 .question {
   width: 245px;
   height: 39px;
   font-size: 18px;
-  margin: 155px 290px;
+  margin: 166px 290px;
 }
 
 .talk:hover {
@@ -367,10 +359,8 @@ a .vebinar {
 }
 
 .left-aside {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  float: left;
+  width: 460px;
+  height: 580px;
   margin: 100em 15em;
   font-family: "Roboto Slab";
 }
@@ -384,4 +374,33 @@ a .vebinar {
   width: 662px;
   font-size: 24px;
   line-height: 150%;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+/* content-summary */
+
+.content-summary {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 300px;
+}
+
+.programme-heading {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 55px;
+  margin: 50em 43em;
+  width: 515px;
+}
+
+.cinema-progress {
+  display: block;
+}
+
+.prise {
+  margin: -168em 147em;
 }
