@@ -204,7 +204,7 @@
 }
 
 .light-img {
-  display: none;
+  display: inline;
   width: 242px;
   height: 203px;
   margin: 10px 20px;
@@ -743,6 +743,10 @@ address {
 
   .detail-txt {
     margin: 20px 0px;
+  }
+
+  .light-img {
+    display: none;
   }
 
   .vebinar-link {
