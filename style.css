@@ -10,127 +10,121 @@
 /* container */
 
 .container {
-  width: 68%;
-  margin: 0 auto;
+  width: 1440px;
+  height: 6575px;
+  margin: 0 70px;
   padding: 0;
 }
 
+.main-header {
+  width: 50%;
+}
+
 .main-info {
-  margin-top: 100px;
-  display: inline-flex;
-  width: 100%;
-}
-
-.main-info .info-img {
-  width: 22px;
-  height: 21px;
-  padding: 5px 15px 0 0;
-  font-size: 18px;
-}
-
-.main-info div {
   display: flex;
+  width: 560px;
+  height: 22px;
+  font-size: 18px;
+  margin-top: 80px;
 }
 
-.main-info > div {
-  padding-right: 25px;
+.main-img-logo {
+  margin-right: 8px;
+  width: 112px;
+  height: 60px;
 }
 
-.main-info .time {
-  width: 140px;
+.main-img {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
 }
 
-.main-info div img {
-  width: 2vw;
+.main-info p {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  width: 156px;
 }
 
 /* content-header */
 
 .content-header {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 100%;
+  width: 80%;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .text-header {
   font-family: "Roboto Slab";
   font-style: normal;
   font-size: 80px;
-  width: 65%;
-}
-
-.main-header {
-  margin: 0;
-  width: 100%;
+  width: 630px;
+  margin-right: 3%;
 }
 
 .subtitle-header {
-  width: 420px;
+  width: 414px;
   font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
   font-size: 20px;
-}
-
-.header {
-  font-size: 55px;
-  width: 60%;
-}
-.header-txt {
-  /* flex-grow: 2; */
-  width: 70%;
 }
 
 .header-img {
   display: flex;
-  align-self: flex-end;
-  align-self: center;
+  align-self: end;
   flex-direction: column;
+  position: absolute;
+  top: 170px;
 }
 
 .header-quote {
-  display: flex;
-  width: 570px;
-  height: 230px;
+  width: 490px;
+  height: 235px;
   background: #1e4681;
   border-radius: 5px;
-  margin-left: 10vw;
+  margin: 16% 25%;
 }
 
 .director {
   width: 304px;
   height: 320px;
-  margin-bottom: 4em;
 }
 
 .shadow {
-  position: relative;
-  z-index: -2;
-  left: 2em;
-  bottom: 6em;
+  width: 366px;
+  height: 25px;
+  z-index: -1;
 }
 
 .production {
-  font-family: "Roboto Slab";
   font-size: 25px;
   color: #fff;
-  margin: 20px 70px;
+  margin: 40px 40px;
   width: 430px;
+}
+
+.production p {
+  width: 345px;
+  font-weight: 600;
+  line-height: 130%;
 }
 
 .author {
   text-align: right;
-  margin-left: 43%;
+  margin: 2% 18%;
   font-size: 20px;
-  width: 280px;
-  height: 30px;
 }
 
 .main-content {
   display: inline-flex;
   flex-direction: column;
-  width: 70%;
+  width: 55%;
   min-height: 620px;
 }
 
@@ -146,7 +140,7 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-top: 150px;
+  margin-top: 35px;
   width: 100%;
 }
 
@@ -163,22 +157,23 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
+  font-family: "Roboto";
+  font-weight: bold;
 }
 
 .text {
-  width: 668px;
-  height: 170px;
+  width: 640px;
   font-family: "Roboto";
   font-style: normal;
   font-size: 24px;
   line-height: 150%;
+  margin-bottom: 30px;
 }
 
 .main-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
   width: 30%;
 }
 
@@ -227,7 +222,7 @@
   flex-direction: column;
   align-self: center;
   position: relative;
-  margin: 20px 65px;
+  margin: 10px 30px;
 }
 
 .detail-heading {
@@ -242,7 +237,7 @@
 .detail-body {
   width: 150px;
   height: 39px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 18px;
   margin-top: 5px;
 }
@@ -253,7 +248,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 .info-body {
@@ -281,26 +276,9 @@
   width: 100%;
   font-family: "Roboto Slab";
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 900;
   padding-bottom: 12px;
-}
-
-.vebinar a {
   color: #1e4681;
-}
-
-.vebinar-lesson,
-.if,
-.question {
-  width: 70%;
-  font-size: 18px;
-}
-
-.list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 a {
@@ -311,11 +289,33 @@ a:hover {
   text-decoration: underline;
 }
 
+.vebinar-lesson,
+.if,
+.question {
+  width: 70%;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 .info-detail {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 140px;
+  margin-top: 80px;
+}
+
+.info-detail p {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 80px;
+  width: 490px;
 }
 
 .list-heading {
@@ -330,7 +330,8 @@ a:hover {
   width: 662px;
   font-size: 24px;
   line-height: 150%;
-  padding-left: 24px;
+  font-weight: 600;
+  margin-top: 80px;
 }
 
 ul {
@@ -343,7 +344,15 @@ ul {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 200px;
+  margin-top: 90px;
+}
+
+.content-summary h1 {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  margin-bottom: 70px;
 }
 
 .programme-heading {
@@ -582,13 +591,16 @@ address {
   }
 
   .production {
-    font-size: 20px;
-    margin: 20px 40px;
+    margin: 20px 17px;
+    width: 250px;
+    height: 66px;
+    font-size: 14px;
+    font-weight: 400;
   }
 
   .header-quote {
-    width: 537px;
-    height: 178px;
+    width: 280px;
+    height: 116px;
     border-radius: 11px;
   }
 
