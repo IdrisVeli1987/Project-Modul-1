@@ -11,7 +11,6 @@
 
 .container {
   width: 1440px;
-  height: 6575px;
   margin: 0 70px;
   padding: 0;
 }
@@ -178,14 +177,14 @@
 }
 
 .camera {
-  width: 314px;
-  height: 315px;
-  margin: 0 0 -55px 35px;
+  width: 180px;
+  height: 179px;
+  margin: 0 0 -25px 25px;
 }
 
 .camera-shadow {
-  width: 366px;
-  height: 59px;
+  width: 211px;
+  height: 35px;
   margin: 10px 15px;
   z-index: -1;
 }
@@ -195,7 +194,6 @@
   position: relative;
   flex-direction: row;
   align-items: flex-end;
-  flex-wrap: wrap;
 }
 
 .light-img {
@@ -251,19 +249,19 @@
   margin-top: 60px;
 }
 
+.content-info h1 {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+}
+
 .info-body {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 100px;
-}
-
-.info-header h1 {
-  width: 500px;
-  height: 80px;
-  font-weight: 700;
-  font-family: "Roboto Slab";
 }
 
 .vebinar-link {
@@ -343,6 +341,7 @@ ul {
 .content-summary {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
   margin-top: 90px;
 }
@@ -403,56 +402,65 @@ ul {
 
 /* content-commentary */
 
+.content-commentary {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  height: 700px;
+  background: #efefef;
+}
+
+.content-commentary h1 {
+  padding-bottom: 50px;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 45px;
+  margin-left: 70px;
+}
+
 .commentary-article {
-  width: 638px;
-  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 574px;
   background: #ffffff;
   box-shadow: 1px 1px 15px rgb(0 0 0 / 25%);
   border-radius: 30px;
   padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
+  margin-left: 70px;
 }
 
 .commentary-article p {
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 15px;
   line-height: 150%;
   margin: 22px;
-}
-.content-commentary {
-  padding-top: 100px;
-  height: 875px;
-  background: #efefef;
-}
-
-.comment-heading {
-  padding-bottom: 100px;
-  font-family: "Roboto Slab";
+  width: 510px;
 }
 
 .profile {
-  flex-grow: 1;
+  float: left;
+  width: 140px;
+  height: 100px;
+  margin-left: 10px;
 }
 
 .profile img {
-  width: 90px;
+  width: 110px;
 }
 
 .address {
   display: flex;
   flex-direction: column;
-  flex-grow: 8;
 }
 
 address {
   padding-bottom: 15px;
-  width: 353px;
+  width: 300px;
   font-family: "Roboto Slab";
   font-style: normal;
-  font-size: 30px;
+  font-size: 25px;
+  margin-top: 21px;
 }
 
 .icon {
@@ -463,10 +471,6 @@ address {
 /* section "price" */
 
 .content-course-detail {
-  /* display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center; */
   width: 100%;
   height: 780px;
   background: #9dc9c8;
@@ -474,14 +478,16 @@ address {
 }
 
 .course-date {
-  width: 100%;
+  width: 900px;
   height: 100px;
+  margin-left: 70px;
 }
 
 .course-date h1 {
   width: 770px;
-  height: 66px;
   font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 55px;
 }
 
 .course-price {
@@ -489,6 +495,7 @@ address {
   flex-direction: column;
   justify-content: center;
   width: 20vw;
+  margin-left: 70px;
 }
 
 .course-price:nth-child(2) {
@@ -506,12 +513,14 @@ address {
 .course-level {
   display: flex;
   padding-top: 20px;
+  margin-left: 70px;
 }
 
 .level-content {
   width: 300px;
   padding-top: 10px;
   font-family: "Roboto Slab";
+  margin-right: 50px;
 }
 
 .level-heading {
@@ -532,7 +541,7 @@ address {
 
 .content-footer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   background-color: #000;
   color: #fff;
@@ -559,6 +568,10 @@ address {
   padding-bottom: 20px;
 }
 
+.footer-right-side {
+  margin-right: 140px;
+}
+
 .contact-detail img {
   padding: 0px 20px 0 0;
 }
@@ -570,38 +583,106 @@ address {
 /* tablet mode */
 @media only screen and (min-width: 992px) and (max-width: 1279px) {
   .container {
-    width: 80%;
+    width: 834px;
+    height: 3800px;
   }
+
+  .main-header {
+    width: 100%;
+  }
+
+  .main-info {
+    width: 35%;
+  }
+
+  .main-img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .main-info p {
+    width: 490px;
+    height: 18px;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .content-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header-img {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
   .director {
-    width: 240px;
-    height: 280px;
+    width: 176px;
+    height: 206px;
+  }
+
+  .shadow {
+    width: 158px;
+    height: 23px;
+    z-index: -1;
+    margin: -10px 0 0px 32px;
   }
 
   .header {
     font-size: 45px;
   }
 
-  .header-txt {
-    flex-grow: 1;
-    width: 56%;
+  .text-header {
+    width: 363px;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 15px;
   }
 
-  .text-header {
-    font-size: 62px;
+  .subtitle-header {
+    width: 264px;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .header-quote {
+    width: 310px;
+    height: 130px;
+    border-radius: 11px;
   }
 
   .production {
     margin: 20px 17px;
     width: 250px;
-    height: 66px;
     font-size: 14px;
     font-weight: 400;
+    font-family: "Roboto";
   }
 
-  .header-quote {
-    width: 280px;
-    height: 116px;
-    border-radius: 11px;
+  .production p {
+    width: 190px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .author {
+    width: 162px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    text-align: right;
+    margin: 20px 95px;
+  }
+
+  .main-content {
+    width: 60%;
   }
 
   .main-text .text {
@@ -610,12 +691,58 @@ address {
     font-size: 18px;
   }
 
-  .main-content {
-    width: 60%;
+  .main-image {
+    margin: 25px 40px;
+  }
+
+  .camera {
+    margin: -25px 30px;
+  }
+
+  .camera-shadow {
+    width: 211px;
+    height: 34px;
+  }
+
+  .main-details {
+    display: flex;
+    width: 100%;
+  }
+
+  .light {
+    width: 134px;
+    height: 117px;
+  }
+
+  .light-shadow {
+    width: 109px;
+    height: 18px;
+  }
+
+  .light-img {
+    width: 240px;
+    margin-left: 0;
   }
 
   .detail-txt {
-    margin: 20px 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detail-heading {
+    width: 86px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .detail-body {
+    width: 86.88px;
+    height: 22.59px;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 130%;
   }
 
   .create {
