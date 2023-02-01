@@ -10,13 +10,13 @@
 /* container */
 
 .container {
-  width: 1440px;
-  margin: 0 70px;
+  width: 80%;
+  margin: 0 auto;
   padding: 0;
 }
 
-.main-header {
-  width: 50%;
+.header {
+  font-size: 55px;
 }
 
 .main-info {
@@ -52,9 +52,7 @@
 
 .content-header {
   display: flex;
-  width: 80%;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -74,20 +72,24 @@
   font-size: 20px;
 }
 
+.header-text {
+  width: 60%;
+}
+
 .header-img {
   display: flex;
-  align-self: end;
+  align-self: flex-end;
   flex-direction: column;
-  position: absolute;
-  top: 170px;
+  align-items: center;
+  width: 40%;
 }
 
 .header-quote {
-  width: 490px;
+  width: 100%;
   height: 235px;
   background: #1e4681;
   border-radius: 5px;
-  margin: 16% 25%;
+  margin: 6% 25%;
 }
 
 .director {
@@ -96,8 +98,7 @@
 }
 
 .shadow {
-  width: 366px;
-  height: 25px;
+  width: 270px;
   z-index: -1;
 }
 
@@ -123,7 +124,7 @@
 .main-content {
   display: inline-flex;
   flex-direction: column;
-  width: 55%;
+  width: 70%;
   min-height: 620px;
 }
 
@@ -148,7 +149,6 @@
   margin-top: 8px;
   width: 240px;
   height: 93px;
-  font-size: 55px;
 }
 
 .main-text {
@@ -177,15 +177,15 @@
 }
 
 .camera {
-  width: 180px;
-  height: 179px;
+  width: 314px;
+  height: 315px;
   margin: 0 0 -25px 25px;
 }
 
 .camera-shadow {
-  width: 211px;
-  height: 35px;
-  margin: 10px 15px;
+  width: 349px;
+  height: 48px;
+  margin: 0px 15px;
   z-index: -1;
 }
 
@@ -194,11 +194,14 @@
   position: relative;
   flex-direction: row;
   align-items: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .light-img {
-  display: inline;
-  width: 242px;
+  display: flex;
+  flex-direction: column;
+  width: 232px;
   height: 203px;
   margin: 10px 20px;
 }
@@ -208,10 +211,8 @@
 }
 
 .light-shadow {
-  position: relative;
-  width: 189px;
-  height: 32px;
-  margin: 20px 30px;
+  width: 201px;
+  margin: 20px;
   z-index: -1;
 }
 
@@ -230,6 +231,7 @@
   font-size: 25px;
   line-height: 130%;
   margin-bottom: 3px;
+  font-family: "Roboto Slab";
 }
 
 .detail-body {
@@ -253,14 +255,12 @@
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 700;
-  font-size: 55px;
 }
 
 .info-body {
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  width: 95%;
   margin-top: 100px;
 }
 
@@ -312,8 +312,6 @@ a:hover {
 .info-detail p {
   font-family: "Roboto Slab";
   font-weight: 700;
-  font-size: 80px;
-  width: 490px;
 }
 
 .list-heading {
@@ -329,7 +327,8 @@ a:hover {
   font-size: 24px;
   line-height: 150%;
   font-weight: 600;
-  margin-top: 80px;
+  padding-top: 80px;
+  padding-left: 20px;
 }
 
 ul {
@@ -350,7 +349,6 @@ ul {
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 700;
-  font-size: 55px;
   margin-bottom: 70px;
 }
 
@@ -372,7 +370,7 @@ ul {
 .create {
   flex-wrap: wrap;
   margin-left: 5px;
-  width: 380px;
+  width: 312px;
   height: 328px;
   background: #ffffff;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
@@ -381,7 +379,7 @@ ul {
 }
 
 .prise {
-  width: 380px;
+  width: 312px;
   height: 160px;
 }
 
@@ -390,7 +388,7 @@ ul {
   font-weight: 700;
   font-size: 25px;
   padding-left: 15px;
-  margin-bottom: 22px;
+  padding-bottom: 14px;
   font-family: "Roboto Slab";
 }
 
@@ -414,8 +412,6 @@ ul {
   padding-bottom: 50px;
   font-family: "Roboto Slab";
   font-weight: 700;
-  font-size: 45px;
-  margin-left: 70px;
 }
 
 .commentary-article {
@@ -426,7 +422,6 @@ ul {
   box-shadow: 1px 1px 15px rgb(0 0 0 / 25%);
   border-radius: 30px;
   padding: 10px;
-  margin-left: 70px;
 }
 
 .commentary-article p {
@@ -434,8 +429,7 @@ ul {
   font-weight: 600;
   font-size: 15px;
   line-height: 150%;
-  margin: 22px;
-  width: 510px;
+  padding: 15px;
 }
 
 .profile {
@@ -478,24 +472,20 @@ address {
 }
 
 .course-date {
-  width: 900px;
   height: 100px;
-  margin-left: 70px;
 }
 
 .course-date h1 {
   width: 770px;
   font-family: "Roboto Slab";
   font-weight: 700;
-  font-size: 55px;
 }
 
 .course-price {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 20vw;
-  margin-left: 70px;
+  width: 30vw;
 }
 
 .course-price:nth-child(2) {
@@ -513,7 +503,6 @@ address {
 .course-level {
   display: flex;
   padding-top: 20px;
-  margin-left: 70px;
 }
 
 .level-content {
@@ -546,7 +535,7 @@ address {
   background-color: #000;
   color: #fff;
   padding: 30px;
-  height: 450px;
+  min-height: 450px;
 }
 
 .footer-container {
@@ -577,16 +566,11 @@ address {
 }
 
 .copyright {
-  margin-top: 12vh;
+  padding-top: 100px;
 }
 
 /* tablet mode */
 @media only screen and (min-width: 992px) and (max-width: 1279px) {
-  .container {
-    width: 834px;
-    height: 3800px;
-  }
-
   .main-header {
     width: 100%;
   }
@@ -681,22 +665,19 @@ address {
     margin: 20px 95px;
   }
 
-  .main-content {
-    width: 60%;
-  }
-
   .main-text .text {
     width: 470px;
-    height: 9vh;
     font-size: 18px;
   }
 
   .main-image {
-    margin: 25px 40px;
+    /* margin: 25px 40px; */
   }
 
   .camera {
-    margin: -25px 30px;
+    /* margin: -25px 30px; */
+    width: 181.86px;
+    height: 182.44px;
   }
 
   .camera-shadow {
@@ -705,7 +686,6 @@ address {
   }
 
   .main-details {
-    display: flex;
     width: 100%;
   }
 
@@ -725,8 +705,7 @@ address {
   }
 
   .detail-txt {
-    display: flex;
-    flex-direction: column;
+    margin-right: 45px;
   }
 
   .detail-heading {
@@ -737,12 +716,42 @@ address {
   }
 
   .detail-body {
-    width: 86.88px;
-    height: 22.59px;
+    width: 90px;
     font-family: "Roboto";
     font-weight: 600;
     font-size: 11px;
     line-height: 130%;
+    margin-top: -10px;
+  }
+
+  .content-info {
+    display: flex;
+    width: 100%;
+  }
+
+  .info-body {
+    margin-top: 50px;
+  }
+
+  a {
+    width: 123px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .vebinar-link {
+    width: 302px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+  }
+
+  .vebinar-lesson,
+  .if,
+  .question {
+    width: 93%;
   }
 
   .create {
@@ -778,22 +787,36 @@ address {
 
 @media only screen and (min-width: 320px) and (max-width: 991px) {
   .container {
-    width: 90%;
+    /* width: 375px; */
   }
 
-  .info-header h1 {
-    width: 350px;
-  }
-  .main-info > div {
-    padding-right: 22px;
+  .main-info {
+    width: 100%;
   }
 
-  .main-info .info-img {
-    font-size: 18px;
+  .main-img-logo {
+    width: 52px;
+    height: 30px;
   }
 
-  .main-info div {
-    font-size: 10px;
+  .main-img {
+    width: 10px;
+    height: 9px;
+  }
+
+  .main-info p {
+    width: 60px;
+    height: 14px;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 7px;
+  }
+
+  .text-header {
+    width: 262px;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    font-size: 37px;
   }
 
   .main-info .time {
@@ -803,11 +826,6 @@ address {
     width: 4vw;
   }
 
-  .text-header {
-    font-size: 30px;
-    width: 290px;
-  }
-
   .subtitle-header {
     width: 250px;
     font-size: 10px;
@@ -815,46 +833,62 @@ address {
   }
 
   .director {
-    width: 170px;
-    height: 214px;
-    margin-bottom: 5em;
+    width: 141.66px;
+    height: 165.89px;
     float: right;
   }
 
   .shadow {
-    left: 0em;
     width: 174px;
     float: right;
   }
 
+  .header-text {
+    width: 100%;
+  }
+
   .header-img {
-    display: block;
+    width: 100%;
+    align-items: flex-end;
   }
 
   .header-quote {
-    width: 300px;
+    width: 255px;
     height: 123px;
     margin-left: 0;
   }
 
   .production {
-    font-size: 12px;
     margin: 20px 14px;
-    width: 430px;
+    width: 200px;
+    height: 52px;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    font-size: 11px;
   }
+
+  .production p {
+    width: 187px;
+    padding: 8px;
+    line-height: 130%;
+  }
+
   .author {
+    width: 130px;
+    height: 21px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
     text-align: right;
-    margin-left: 0;
-    font-size: 13px;
-    width: 280px;
-    height: 30px;
   }
   .header {
     font-size: 30px;
   }
 
   .main-content {
-    width: 72%;
+    width: 100%;
     min-height: 570px;
   }
 
@@ -864,12 +898,12 @@ address {
     font-size: 17px;
   }
   .main-image {
-    width: 350px;
+    width: 100%;
   }
 
   .camera {
-    width: 190px;
-    height: 226px;
+    width: 146.32px;
+    height: 146.78px;
     margin: 0 0 -40px 83px;
   }
 
@@ -882,20 +916,56 @@ address {
 
   .detail-txt {
     margin: 20px 0px;
+    width: 50%;
   }
 
   .light-img {
     display: none;
   }
 
+  .content-info {
+    width: 100%;
+  }
+
+  .content-info h1 {
+    width: 310px;
+    height: 43px;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
   .vebinar-link {
-    width: 60%;
     padding-bottom: 35px;
     width: 93%;
+    font-weight: 600;
+  }
+
+  .vebinar {
+    width: 100px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 12px;
+    color: #1e4681;
+  }
+
+  .vebinar-lesson,
+  .if,
+  .question {
+    width: 180px;
+    height: 48px;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 10px;
   }
 
   .info-body {
     margin-top: 50px;
+    flex-direction: column;
   }
 
   .about-cinema-list {
@@ -918,16 +988,17 @@ address {
   }
 
   .banner-title {
-    font-size: 20px;
+    font-size: 12px;
+    font-weight: bold;
   }
 
   .commentary-article {
-    width: 350px;
-    height: 330px;
+    width: 308px;
+    height: 248px;
   }
 
   .commentary-article p {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .list-heading {
@@ -936,6 +1007,7 @@ address {
 
   .profile {
     flex-grow: 0;
+    width: 100px;
   }
 
   address {
@@ -945,6 +1017,11 @@ address {
 
   .address {
     flex-grow: 0;
+  }
+
+  .icon img {
+    width: 20px;
+    height: 20px;
   }
 
   .profile img {
@@ -990,9 +1067,12 @@ address {
   }
 
   .content-footer {
-    width: 540px;
     height: 550px;
     padding: 5px;
+  }
+
+  .level-content {
+    margin-right: 0px;
   }
 
   .footer-logo {
@@ -1031,6 +1111,6 @@ address {
   }
 
   .copyright {
-    margin-top: 70vw;
+    margin-top: 40vw;
   }
 }
