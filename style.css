@@ -85,7 +85,7 @@
 }
 
 .header-quote {
-  width: 100%;
+  width: 20%;
   height: 235px;
   background: #1e4681;
   border-radius: 5px;
@@ -201,7 +201,7 @@
 .light-img {
   display: flex;
   flex-direction: column;
-  width: 232px;
+  width: 290px;
   height: 203px;
   margin: 10px 20px;
 }
@@ -365,6 +365,7 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   padding-bottom: 100px;
+  width: 50%;
 }
 
 .create {
@@ -676,8 +677,8 @@ address {
 
   .camera {
     /* margin: -25px 30px; */
-    width: 181.86px;
-    height: 182.44px;
+    width: 181px;
+    height: 320px;
   }
 
   .camera-shadow {
@@ -782,6 +783,9 @@ address {
 
   .address address {
     font-size: 20px;
+  }
+  .cinema-progress {
+    width: 103%;
   }
 }
 
