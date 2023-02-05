@@ -10,7 +10,7 @@
 /* container */
 
 .container {
-  width: 80%;
+  width: 1440px;
   margin: 0 auto;
   padding: 0;
 }
@@ -77,15 +77,11 @@
 }
 
 .header-img {
-  display: flex;
-  align-self: flex-end;
-  flex-direction: column;
-  align-items: center;
   width: 40%;
 }
 
 .header-quote {
-  width: 20%;
+  width: 35%;
   height: 235px;
   background: #1e4681;
   border-radius: 5px;
@@ -201,8 +197,7 @@
 .light-img {
   display: flex;
   flex-direction: column;
-  width: 290px;
-  height: 203px;
+  width: 232px;
   margin: 10px 20px;
 }
 
@@ -225,7 +220,7 @@
 }
 
 .detail-heading {
-  width: 150px;
+  width: 315px;
   height: 39px;
   font-weight: 700;
   font-size: 25px;
@@ -365,7 +360,7 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   padding-bottom: 100px;
-  width: 50%;
+  width: 72%;
 }
 
 .create {
@@ -389,7 +384,6 @@ ul {
   font-weight: 700;
   font-size: 25px;
   padding-left: 15px;
-  padding-bottom: 14px;
   font-family: "Roboto Slab";
 }
 
@@ -404,21 +398,33 @@ ul {
 .content-commentary {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
-  height: 700px;
+  width: 100%;
+  height: 780px;
   background: #efefef;
+  padding: 5% 10%;
+}
+
+.commentary-container {
+  width: 987px;
+  height: 93px;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 101.38%;
 }
 
 .content-commentary h1 {
-  padding-bottom: 50px;
+  padding-bottom: 95px;
   font-family: "Roboto Slab";
   font-weight: 700;
+  font-size: 55px;
 }
 
 .commentary-article {
   display: flex;
   flex-wrap: wrap;
-  width: 574px;
+  width: 750px;
   background: #ffffff;
   box-shadow: 1px 1px 15px rgb(0 0 0 / 25%);
   border-radius: 30px;
@@ -428,34 +434,35 @@ ul {
 .commentary-article p {
   font-family: "Roboto";
   font-weight: 600;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 150%;
   padding: 15px;
 }
 
 .profile {
   float: left;
-  width: 140px;
-  height: 100px;
+  width: 185px;
   margin-left: 10px;
 }
 
 .profile img {
-  width: 110px;
+  width: 190px;
 }
 
 .address {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
 }
 
 address {
-  padding-bottom: 15px;
-  width: 300px;
+  width: 353px;
   font-family: "Roboto Slab";
   font-style: normal;
-  font-size: 25px;
-  margin-top: 21px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 101.38%;
 }
 
 .icon {
@@ -472,12 +479,26 @@ address {
   padding-top: 180px;
 }
 
+.course-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 15%;
+}
+
 .course-date {
-  height: 100px;
+  width: 908px;
+  height: 66px;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  padding-bottom: 10%;
 }
 
 .course-date h1 {
-  width: 770px;
+  width: 910px;
   font-family: "Roboto Slab";
   font-weight: 700;
 }
@@ -487,11 +508,7 @@ address {
   flex-direction: column;
   justify-content: center;
   width: 30vw;
-}
-
-.course-price:nth-child(2) {
-  font-size: 80px;
-  font-weight: 600;
+  padding-bottom: 5%;
 }
 
 .price-heading {
@@ -499,6 +516,14 @@ address {
   height: 32px;
   font-family: "Roboto";
   font-size: 25px;
+}
+
+.price {
+  width: 481px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
 }
 
 .course-level {
@@ -514,10 +539,12 @@ address {
 }
 
 .level-heading {
+  width: 294px;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 
 .level-text {
@@ -542,7 +569,7 @@ address {
 .footer-container {
   padding-top: 80px;
   display: flex;
-  justify-content: space-between;
+  background-color: black;
 }
 
 .footer-logo {
@@ -558,10 +585,6 @@ address {
   padding-bottom: 20px;
 }
 
-.footer-right-side {
-  margin-right: 140px;
-}
-
 .contact-detail img {
   padding: 0px 20px 0 0;
 }
@@ -572,6 +595,10 @@ address {
 
 /* tablet mode */
 @media only screen and (min-width: 992px) and (max-width: 1279px) {
+  .container {
+    width: 834px;
+  }
+
   .main-header {
     width: 100%;
   }
@@ -598,12 +625,6 @@ address {
     flex-wrap: wrap;
   }
 
-  .header-img {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-  }
-
   .director {
     width: 176px;
     height: 206px;
@@ -628,8 +649,19 @@ address {
     margin-bottom: 15px;
   }
 
+  .text {
+    width: 383.41px;
+    height: 216.61px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
   .subtitle-header {
     width: 264px;
+    height: 80px;
     font-family: "Roboto";
     font-weight: 600;
     font-size: 12px;
@@ -642,19 +674,21 @@ address {
   }
 
   .production {
-    margin: 20px 17px;
-    width: 250px;
+    margin: 15px 15px;
+    width: 280px;
     font-size: 14px;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Roboto Slab";
+    font-style: normal;
   }
 
   .production p {
-    width: 190px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
+    width: 240px;
+    height: 65px;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
   }
 
   .author {
@@ -663,22 +697,35 @@ address {
     font-weight: 400;
     font-size: 12px;
     text-align: right;
-    margin: 20px 95px;
+    margin: 15px 40px;
+  }
+
+  .sub-title header {
+    width: 211px;
+    height: 53px;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
   }
 
   .main-text .text {
-    width: 470px;
-    font-size: 18px;
+    width: 383px;
+    height: 80px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
   }
 
   .main-image {
-    /* margin: 25px 40px; */
+    margin-bottom: 175px;
+    justify-content: center;
   }
 
   .camera {
-    /* margin: -25px 30px; */
     width: 181px;
-    height: 320px;
+    height: 182px;
   }
 
   .camera-shadow {
@@ -701,7 +748,7 @@ address {
   }
 
   .light-img {
-    width: 240px;
+    width: 155px;
     margin-left: 0;
   }
 
@@ -719,7 +766,6 @@ address {
   .detail-body {
     width: 90px;
     font-family: "Roboto";
-    font-weight: 600;
     font-size: 11px;
     line-height: 130%;
     margin-top: -10px;
@@ -732,32 +778,66 @@ address {
 
   .info-body {
     margin-top: 50px;
+    width: 100%;
   }
 
-  a {
-    width: 123px;
-    font-family: "Roboto";
+  .vebinar {
+    width: 131px;
+    height: 22px;
+    font-family: "Roboto Slab";
+    font-style: normal;
     font-weight: 700;
     font-size: 15px;
+    line-height: 130%;
   }
 
-  .vebinar-link {
-    width: 302px;
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .vebinar-lesson {
+    width: 153px;
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 11px;
   }
 
-  .vebinar-lesson,
-  .if,
+  .if {
+    width: 172px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+  }
+
   .question {
-    width: 93%;
+    width: 141px;
+    height: 22px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+  }
+
+  .about-cinema-list {
+    width: 383px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
   }
 
   .create {
-    width: 240px;
-    height: 230px;
+    width: 231px;
+    height: 189px;
+    background: #ffffff;
+    box-shadow: 0.579167px 0.579167px 8.6875px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+  }
+
+  .content-summary {
+    width: 100%;
   }
 
   .prise {
@@ -766,32 +846,95 @@ address {
   }
 
   .banner {
-    font-size: 18px;
+    width: 211px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 130%;
+    padding-bottom: 5px;
   }
 
   .banner-title {
-    font-size: 17px;
+    width: 211px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  .content-commentary {
+    width: 834px;
+    height: 452px;
+  }
+
+  .content-commentary h1 {
+    width: 571px;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+
+  .commentary-article {
+    width: 45%;
+  }
+
+  .commentary-article p {
+    width: 405px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .profile {
+    width: 110px;
+    height: 97px;
+  }
+
+  .profile img {
+    width: 110px;
   }
 
   .course-price {
-    width: 30vw;
-  }
-
-  .course-price:nth-child(2) {
+    width: 35vw;
     font-size: 70px;
   }
 
   .address address {
-    font-size: 20px;
+    width: 204px;
+    font-size: 17px;
   }
+
+  .icon {
+    width: 18px;
+    padding-top: 10px;
+  }
+
   .cinema-progress {
-    width: 103%;
+    width: 99%;
+    height: 100%;
+  }
+
+  .content-course-detail {
+    width: 100%;
+  }
+
+  .content-footer {
+    width: 834px;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 991px) {
+  body {
+    margin: 0 auto;
+  }
+
   .container {
-    /* width: 375px; */
+    width: 375px;
   }
 
   .main-info {
@@ -837,14 +980,14 @@ address {
   }
 
   .director {
-    width: 141.66px;
-    height: 165.89px;
+    width: 141px;
+    height: 165px;
     float: right;
   }
 
   .shadow {
-    width: 174px;
-    float: right;
+    width: 127px;
+    height: 19px;
   }
 
   .header-text {
@@ -853,7 +996,6 @@ address {
 
   .header-img {
     width: 100%;
-    align-items: flex-end;
   }
 
   .header-quote {
@@ -1002,6 +1144,10 @@ address {
   }
 
   .commentary-article p {
+    width: 305px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
     font-size: 10px;
   }
 
@@ -1010,13 +1156,14 @@ address {
   }
 
   .profile {
-    flex-grow: 0;
-    width: 100px;
+    width: 80px;
+    height: 84px;
   }
 
   address {
-    width: 170px;
-    font-size: 13px;
+    width: 164px;
+    height: 32px;
+    font-size: 14px;
   }
 
   .address {
@@ -1024,8 +1171,7 @@ address {
   }
 
   .icon img {
-    width: 20px;
-    height: 20px;
+    width: 14x;
   }
 
   .profile img {
@@ -1033,58 +1179,92 @@ address {
   }
 
   .course-date h1 {
-    width: 300px;
+    width: 224px;
+    font-size: 26px;
+  }
+
+  .course-container {
+    width: 671px;
   }
 
   .course-price {
     width: 350px;
   }
 
-  .course-price:nth-child(2) {
-    font-size: 50px;
+  .course-date {
+    width: 75%;
+  }
+
+  .course-price {
+    width: 224px;
+    font-size: 37px;
     font-weight: 600;
+    padding-top: 2%;
   }
 
   .price-heading {
     font-size: 25px;
   }
 
+  .price {
+    width: 224px;
+    font-size: 37px;
+  }
+
   .content-course-detail {
     padding-top: 100px;
   }
 
+  .level-content {
+    width: 140px;
+    margin-right: 0px;
+  }
+
   .level-heading {
-    font-size: 15px;
+    width: 137px;
+    font-size: 12px;
     font-weight: bold;
   }
 
   .level-text {
-    font-size: 13px;
+    width: 138px;
+    font-size: 10px;
+  }
+
+  .commentary-container {
+    width: 376px;
+    height: 423px;
+  }
+
+  .commentary-container h1 {
+    width: 257px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
   }
 
   .content-commentary {
-    height: 675px;
+    width: 100%;
   }
 
   .content-course-detail {
     height: 500px;
+    width: 161%;
   }
 
   .content-footer {
-    height: 550px;
-    padding: 5px;
-  }
-
-  .level-content {
-    margin-right: 0px;
+    width: 161%;
+    height: 251px;
   }
 
   .footer-logo {
-    padding-bottom: 10px;
+    width: 53px;
+    height: 31px;
+    padding-bottom: 50%;
   }
 
   .social-media {
-    width: 100%;
+    width: 130%;
   }
 
   .social-medial img {
@@ -1100,7 +1280,6 @@ address {
 
   .footer-left-side {
     position: absolute;
-    margin-top: -35px;
     display: block;
   }
 
@@ -1112,9 +1291,6 @@ address {
   .contact-detail img {
     width: 40px;
     height: 20px;
-  }
-
-  .copyright {
-    margin-top: 40vw;
+    padding-bottom: 10%;
   }
 }
